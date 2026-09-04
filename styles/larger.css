@@ -1,0 +1,61 @@
+@media screen and (min-width: 700px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        padding: 1rem 5%;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    nav a {
+        border: none;
+        padding: 1rem 1.5rem;
+    }
+
+    nav a:hover {
+        background-color: #3f7cac;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+    }
+
+    .about {
+        grid-column: 1;
+    }
+
+    .photo {
+        grid-column: 2;
+    }
+
+    .certificate {
+        grid-column: 1 / -1;
+    }
+
+    .course-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

@@ -1,0 +1,331 @@
+```css
+/* =========================
+   WDD131 HOME PAGE STYLES
+   ========================= */
+
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    color: #222;
+    background-color: #f5f7fa;
+    line-height: 1.5;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: #17324d;
+    color: white;
+    padding: 1rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.profile img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* =========================
+   MENU BUTTON
+   ========================= */
+
+#menu-button {
+    display: block;
+    margin-left: auto;
+    margin-top: -45px;
+    padding: 0.25rem 0.5rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu-button:hover {
+    color: #d8f3dc;
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #3f7cac;
+}
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    color: #17324d;
+    border-bottom: 3px solid #3f7cac;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+section {
+    background-color: white;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin: 0;
+    padding: 0.8rem;
+    background-color: #17324d;
+    color: white;
+    font-size: 1.2rem;
+}
+
+section p {
+    padding: 1rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* =========================
+   PROFILE PHOTO
+   ========================= */
+
+.photo {
+    text-align: center;
+}
+
+.photo img {
+    width: min(100%, 400px);
+    height: auto;
+    padding: 1rem;
+    display: block;
+    margin: 0 auto;
+}
+
+/* =========================
+   COURSE BUTTONS
+   ========================= */
+
+.course-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.course-buttons button {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f7cac;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.course-buttons button:hover {
+    background-color: #17324d;
+}
+
+/* =========================
+   COURSE CREDITS
+   ========================= */
+
+.credits {
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+/* =========================
+   COURSE LIST
+   ========================= */
+
+#course-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* =========================
+   COURSE CARD
+   ========================= */
+
+.course-card {
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f5f7fa;
+}
+
+.course-card.completed {
+    background-color: #d8f3dc;
+    border-color: #2d6a4f;
+}
+
+.course-card h3 {
+    margin-top: 0;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer a {
+    color: white;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    color: #d8f3dc;
+}
+
+.social {
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   TABLET / DESKTOP
+   ========================= */
+
+@media screen and (min-width: 700px) {
+
+    /* Header */
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        padding: 1rem 5%;
+    }
+
+    /* Profile */
+    .profile {
+        font-size: 1.5rem;
+    }
+
+    /* Hide hamburger button */
+    #menu-button {
+        display: none;
+    }
+
+    /* Navigation */
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    nav a {
+        border-top: none;
+        padding: 0.8rem 1rem;
+    }
+
+    /* Main content */
+    main {
+        padding: 2rem;
+    }
+
+    /* Course buttons */
+    .course-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .course-buttons button {
+        flex: 1;
+        max-width: 250px;
+    }
+
+    /* Course cards */
+    #course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Sections */
+    section p {
+        padding: 1.5rem;
+    }
+
+    /* Photo */
+    .photo img {
+        max-width: 350px;
+    }
+}
+
+/* =========================
+   LARGE DESKTOP
+   ========================= */
+
+@media screen and (min-width: 1000px) {
+
+    main {
+        max-width: 1200px;
+    }
+
+    #course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .course-card {
+        min-height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+```
