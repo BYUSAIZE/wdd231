@@ -1,0 +1,51 @@
+/* ============================================
+   Chamber of Commerce — larger.css (768px+)
+   ============================================ */
+
+@media (min-width: 768px) {
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+        order: 0;
+        margin-top: 0;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        border-top: none;
+        padding: 0.5rem 0.9rem;
+        border-radius: 4px;
+    }
+
+    main {
+        padding: 2rem 1.5rem 3rem;
+    }
+
+    #member-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #member-container.list-view {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    #member-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

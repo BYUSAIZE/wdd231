@@ -1,0 +1,230 @@
+/* ============================================
+   Chamber of Commerce — small.css (mobile-first)
+   ============================================ */
+
+:root {
+    --color-primary: #14532d;      /* deep green */
+    --color-secondary: #d97706;    /* warm amber */
+    --color-bg: #f7f5f0;
+    --color-surface: #ffffff;
+    --color-text: #222222;
+    --color-text-light: #f7f5f0;
+    --color-border: #e2ddd0;
+
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    position: relative;
+}
+
+header .profile {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+header .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header .profile span {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+#menu-button {
+    font-size: 1.6rem;
+    color: var(--color-text-light);
+    background: none;
+    border: none;
+    padding: 0.2rem 0.5rem;
+}
+
+nav {
+    display: none;
+    width: 100%;
+    order: 3;
+    margin-top: 0.75rem;
+}
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem 0.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+nav a.active,
+nav a:hover {
+    color: var(--color-secondary);
+}
+
+/* ---------- Main ---------- */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.25rem 1rem 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* ---------- Directory-specific ---------- */
+
+.directory-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.view-toggle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-toggle button {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    padding: 0.5rem 0.9rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.view-toggle button.active {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border-color: var(--color-primary);
+}
+
+/* Card grid — 1 column on mobile */
+#member-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+#member-container.list-view {
+    grid-template-columns: 1fr;
+}
+
+.member-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.member-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.member-card .card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.member-card h3 {
+    font-size: 1.05rem;
+}
+
+.membership-badge {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    color: var(--color-text-light);
+}
+
+.membership-badge.level-1 { background-color: #94a3b8; }
+.membership-badge.level-2 { background-color: #94a3a3;
+    background-color: #71717a; }
+.membership-badge.level-3 { background-color: var(--color-secondary); }
+
+/* List view: horizontal card layout */
+#member-container.list-view .member-card {
+    flex-direction: row;
+}
+
+#member-container.list-view .member-card img {
+    width: 120px;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 1.25rem 1rem;
+    font-size: 0.85rem;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+footer .social a {
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+footer .social a:hover {
+    color: var(--color-secondary);
+}
+
+footer p {
+    margin: 0.2rem 0;
+}

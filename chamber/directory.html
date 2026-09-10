@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Harare Chamber of Commerce | Member Directory</title>
+
+    <meta name="description" content="Directory of member businesses of the Harare Chamber of Commerce, Zimbabwe.">
+    <meta name="author" content="Prosper Saize">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.png">
+
+    <!-- Open Graph / Facebook meta -->
+    <meta property="og:title" content="Harare Chamber of Commerce | Member Directory">
+    <meta property="og:description" content="Explore member businesses of the Harare Chamber of Commerce, Zimbabwe.">
+    <meta property="og:image" content="https://www.hararechamber.co.zw/images/og-image.jpg">
+    <meta property="og:url" content="https://www.hararechamber.co.zw/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS: normalize first, then mobile-first, then larger-view -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="profile">
+            <img src="images/favicon.png" alt="Harare Chamber of Commerce logo">
+            <span>Harare Chamber of Commerce</span>
+        </div>
+
+        <button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+            &#9776;
+        </button>
+
+        <nav id="navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html" class="active">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Member Directory</h1>
+
+        <div class="directory-controls">
+            <p>Showing all member businesses of the Harare Chamber of Commerce.</p>
+
+            <div class="view-toggle">
+                <button id="grid-view" type="button" class="active" aria-label="Grid view">Grid</button>
+                <button id="list-view" type="button" aria-label="List view">List</button>
+            </div>
+        </div>
+
+        <div id="member-container"></div>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="#" aria-label="Facebook">Facebook</a>
+        </div>
+
+        <p>Harare Chamber of Commerce | Harare, Zimbabwe</p>
+        <p>&copy; <span id="currentyear"></span> Prosper Saize | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>

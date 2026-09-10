@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Harare Digital Solutions",
+        "address": "12 Samora Machel Ave, Harare",
+        "phone": "+263 77 2701 234",
+        "website": "https://www.hararedigital.co.zw",
+        "image": "comp1.avif",
+        "membership": 3,
+        "tagline": "Custom software and web development for local businesses.",
+        "founded": 2015
+    },
+    {
+        "name": "Mukuvisi Green Grocers",
+        "address": "45 Enterprise Rd, Harare",
+        "phone": "+263 77 2778 456",
+        "website": "https://www.mukuvisigrocers.co.zw",
+        "image": "comp2.avif",
+        "membership": 1,
+        "tagline": "Fresh, locally grown produce delivered daily.",
+        "founded": 2009
+    },
+    {
+        "name": "Zimplow Engineering Works",
+        "address": "8 Seke Rd, Graniteside, Harare",
+        "phone": "+263 78 2662 789",
+        "website": "https://www.zimplowengineering.co.zw",
+        "image": "comp4.avif",
+        "membership": 3,
+        "tagline": "Precision manufacturing and equipment repair since 1998.",
+        "founded": 1998
+    },
+    {
+        "name": "Avondale Bakery & Café",
+        "address": "23 King George Rd, Avondale, Harare",
+        "phone": "+263 77 2335 612",
+        "website": "https://www.avondalebakery.co.zw",
+        "image": "comp5.avif",
+        "membership": 2,
+        "tagline": "Fresh bread, pastries, and coffee in the heart of Avondale.",
+        "founded": 2012
+    },
+    {
+        "name": "Zambezi Legal Partners",
+        "address": "101 Julius Nyerere Way, Harare",
+        "phone": "+263 71 2793 345",
+        "website": "https://www.zambezilegal.co.zw",
+        "image": "comp6.avif",
+        "membership": 3,
+        "tagline": "Trusted legal counsel for businesses across Zimbabwe.",
+        "founded": 2004
+    },
+    {
+        "name": "Kopje Fitness Studio",
+        "address": "17 Rotten Row, Harare",
+        "phone": "+263 78 2551 890",
+        "website": "https://www.kopjefitness.co.zw",
+        "image": "comp7.avif",
+        "membership": 1,
+        "tagline": "Personal training and group classes for every fitness level.",
+        "founded": 2019
+    },
+    {
+        "name": "Borrowdale Auto Care",
+        "address": "5 Borrowdale Rd, Harare",
+        "phone": "+263 77 2884 123",
+        "website": "https://www.borrowdaleautocare.co.zw",
+        "image": "comp8.avif",
+        "membership": 2,
+        "tagline": "Full-service auto repair and maintenance you can trust.",
+        "founded": 2011
+    },
+    {
+        "name": "Highfield Craft Collective",
+        "address": "34 Cripps Rd, Highfield, Harare",
+        "phone": "+263 71 2661 567",
+        "website": "https://www.highfieldcraft.co.zw",
+        "image": "comp9.avif",
+        "membership": 1,
+        "tagline": "Handmade textiles, art, and crafts from local artisans.",
+        "founded": 2017
+    }
+]
