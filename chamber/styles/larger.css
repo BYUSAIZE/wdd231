@@ -42,6 +42,18 @@
     footer {
         padding: 1.5rem;
     }
+
+    #spotlight-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero img {
+        height: 60vh;
+    }
+
+    .hero-copy h1 {
+        font-size: 2.2rem;
+    }
 }
 
 @media (min-width: 1024px) {
