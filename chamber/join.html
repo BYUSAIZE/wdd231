@@ -4,12 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chamber of Commerce | Join Us</title>
-  <meta name="description" content="Apply to join the Chamber of Commerce. Select a membership level and submit your organization application.">
+  <meta name="description" content="Apply to join the Harare Chamber of Commerce. Select a membership level and submit your organization application.">
   <meta name="author" content="Prosper Saize">
+
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:title" content="Harare Chamber of Commerce - Membership Application">
+  <meta property="og:description" content="Apply to join the Harare Chamber of Commerce. Select a membership level and submit your organization application.">
+  <meta property="og:image" content="https://byusaize.github.io/wdd231/chamber/zimflag.jpg">
+  <meta property="og:url" content="https://byusaize.github.io/wdd231/chamber/join.html">
+
   <link rel="icon" href="favicon.svg.jpg">
+
+  <!-- Google Fonts Preconnect & Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
+
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="scripts/join.js" defer></script>
@@ -18,10 +32,10 @@
 
   <header>
     <div class="header-container">
-      <img src="images/favicon.png" alt="Harare Chamber of Commerce Logo" class="logo">
-      <h1>Chamber of Commerce</h1>
-      <button id="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">&#9776;</button>
-      <nav id="main-nav">
+      <img src="zimflag.jpg" alt="Harare Chamber of Commerce Logo" class="logo">
+      <p class="site-title">Harare Chamber of Commerce</p>
+      <button id="menu-button" aria-label="Toggle Navigation Menu" aria-expanded="false">&#9776;</button>
+      <nav id="navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="directory.html">Directory</a></li>
@@ -32,7 +46,7 @@
   </header>
 
   <main class="join-main">
-    <h2>Membership Application</h2>
+    <h1>Chamber of Commerce Membership Application</h1>
     
     <div class="join-container">
       <!-- Form Section -->
@@ -99,29 +113,29 @@
 
       <!-- Membership Cards Section -->
       <section class="cards-section">
-        <h3>Membership Levels & Benefits</h3>
+        <h2>Membership Levels & Benefits</h2>
         <div class="membership-cards">
           
           <div class="card card-animate">
-            <h4>NP Membership</h4>
+            <h3>NP Membership</h3>
             <p>For non-profit organizations with zero membership fees.</p>
             <button type="button" class="open-modal" data-modal="modal-np">View Benefits</button>
           </div>
 
           <div class="card card-animate">
-            <h4>Bronze Membership</h4>
+            <h3>Bronze Membership</h3>
             <p>Essential networking and directory exposure for small teams.</p>
             <button type="button" class="open-modal" data-modal="modal-bronze">View Benefits</button>
           </div>
 
           <div class="card card-animate">
-            <h4>Silver Membership</h4>
+            <h3>Silver Membership</h3>
             <p>Expanded advertising and event discounts for growing companies.</p>
             <button type="button" class="open-modal" data-modal="modal-silver">View Benefits</button>
           </div>
 
           <div class="card card-animate">
-            <h4>Gold Membership</h4>
+            <h3>Gold Membership</h3>
             <p>Premium spotlight placements, training vouchers, and executive perks.</p>
             <button type="button" class="open-modal" data-modal="modal-gold">View Benefits</button>
           </div>
@@ -184,8 +198,8 @@
   </main>
 
   <footer>
-    <p>&copy; <span id="current-year"></span> Chamber of Commerce | Prosper Saize | WDD 231</p>
-    <p id="last-modified"></p>
+    <p>&copy; <span id="currentyear"></span> Harare Chamber of Commerce | Prosper Saize | WDD 231</p>
+    <p id="lastModified"></p>
   </footer>
 
 </body>
