@@ -1,0 +1,135 @@
+/* ============================================
+   Discover page: load after small.css and larger.css
+   Reuses the global .card look from small.css
+   ============================================ */
+
+#visit-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--color-card);
+  color: var(--color-primary-dark);
+  border-left: 5px solid var(--color-gold);
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+#visit-close {
+  background: none;
+  border: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: inherit;
+}
+
+#discover-grid {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#discover-grid .card h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  color: var(--color-primary-dark);
+}
+
+#discover-grid .card figure {
+  margin: 0 0 0.75rem;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+#discover-grid .card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+#discover-grid .card address {
+  font-style: normal;
+  color: var(--color-stone);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+#discover-grid .card p {
+  margin: 0 0 1rem;
+}
+
+#discover-grid .card button {
+  background: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#discover-grid .card button:hover {
+  background: var(--color-primary-dark);
+}
+
+/* Small: 320px - 640px. One stacked column */
+#discover-grid {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "c1"
+    "c2"
+    "c3"
+    "c4"
+    "c5"
+    "c6"
+    "c7"
+    "c8";
+}
+
+/* Medium: 641px - 1024px. Two columns, cards 1 and 4 span the width */
+@media (min-width: 641px) {
+  #discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "c1 c1"
+      "c2 c3"
+      "c4 c4"
+      "c5 c6"
+      "c7 c8";
+  }
+
+  /* Image hover effect: not applied on mobile */
+  #discover-grid .card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  #discover-grid .card img:hover {
+    transform: scale(1.06);
+    filter: brightness(1.1) saturate(1.2);
+  }
+}
+
+/* Large: 1025px and up. Four columns, card 2 spans two rows */
+@media (min-width: 1025px) {
+  #discover-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "c1 c1 c2 c3"
+      "c4 c5 c2 c6"
+      "c7 c7 c8 c8";
+  }
+}
+/* ---- Performance and quality fixes ---- */
+
+/* Reserve space so the JS-built content doesn't push the footer down (CLS) */
+#visit-message { min-height: 3.5rem; }
+#discover-grid { min-height: 100vh; }
+
+/* Photos are 300x200, so don't stretch them past their real size */
+#discover-grid .card figure { max-width: 300px; margin-left: auto; margin-right: auto; }
