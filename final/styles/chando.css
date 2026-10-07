@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background-color: var(--background);
     color: var(--primary);
     line-height: 1.6;
@@ -53,6 +53,18 @@ header {
     object-fit: contain;
     display: block;
 }
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: inherit;
+}
+
 #menu-button {
     display: block;
     background: none;
@@ -140,6 +152,19 @@ p {
     margin-bottom: 1rem;
 }
 
+/* SHOP PAGE */
+.shop-hero {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.filter-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
 /* CARDS & GRIDS */
 .intro-grid,
 .story-grid,
@@ -150,12 +175,20 @@ p {
     margin-top: 1.5rem;
 }
 
+.intro-grid.spaced {
+    margin-top: 2rem;
+}
+
 .card, .product-card {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.card.spaced {
+    margin-top: 1.5rem;
 }
 
 .product-card {
@@ -222,6 +255,66 @@ p {
     font-size: 1rem;
 }
 
+/* ABOUT PAGE / CONTACT FORM */
+.contact-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-wrap {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 2rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-field label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.form-field input,
+.form-field textarea {
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.form-field textarea {
+    resize: vertical;
+}
+
+/* SUCCESS PAGE */
+.confirmation-card {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.confirmation-message {
+    margin: 1rem 0;
+}
+
+/* ATTRIBUTIONS PAGE */
+.credit-list {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 /* BUTTONS & FOOTER */
 .button {
     display: inline-block;
@@ -234,6 +327,14 @@ p {
     text-align: center;
     border: none;
     cursor: pointer;
+}
+
+.submit-button {
+    margin-top: 0.5rem;
+}
+
+.inline-button {
+    margin-top: 1rem;
 }
 
 footer {
@@ -277,73 +378,4 @@ footer {
 .footer-links a:hover,
 .footer-links a.active {
     color: #ffffff;
-}
-/* ===== Add this to the END of styles/chando.css ===== */
-
-body {
-    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-}
-
-/* Logo (replaces inline styles in the header) */
-.logo-link { text-decoration: none; }
-.logo-text {
-    font-size: 1.8rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: inherit;
-}
-
-/* Shop */
-.shop-hero { text-align: center; padding: 2rem 0; }
-.filter-controls {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-/* About */
-.intro-grid.spaced { margin-top: 2rem; }
-.contact-intro { text-align: center; margin-bottom: 2rem; }
-.form-wrap { max-width: 600px; margin: 0 auto; }
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    padding: 2rem;
-}
-.form-field { display: flex; flex-direction: column; gap: 0.4rem; }
-.form-field label { font-weight: bold; font-size: 0.9rem; }
-.form-field input,
-.form-field textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: inherit;
-}
-.form-field textarea { resize: vertical; }
-.submit-button {
-    cursor: pointer;
-    border: none;
-    margin-top: 0.5rem;
-    text-align: center;
-}
-
-/* Success */
-.confirmation-card { text-align: center; padding: 3rem 1rem; }
-.confirmation-message { margin: 1rem 0; }
-.inline-button {
-    display: inline-block;
-    margin-top: 1rem;
-    text-decoration: none;
-}
-
-/* Attributions */
-.card.spaced { margin-top: 1.5rem; }
-.credit-list {
-    margin-left: 1.5rem;
-    margin-top: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
 }
