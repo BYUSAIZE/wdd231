@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ch-01",
+    "name": "Signature Chando Hoodie",
+    "category": "Hoodies",
+    "price": 65.00,
+    "description": "Heavyweight cotton blend hoodie featuring minimalist branding and long-lasting comfort.",
+    "image": "./images/hoodies.jpeg"
+  },
+  {
+    "id": "ch-02",
+    "name": "Minimalist Crewneck Sweater",
+    "category": "Sweaters",
+    "price": 50.00,
+    "description": "Clean lines and soft interior fleece designed for layering in any season.",
+    "image": "./images/sweaters.jpeg"
+  },
+  {
+    "id": "ch-03",
+    "name": "Essential Chando Tee",
+    "category": "Shirts",
+    "price": 30.00,
+    "description": "Breathable, premium cotton t-shirt tailored for a modern, relaxed fit.",
+    "image": "./images/all.jpeg"
+  },
+  {
+    "id": "ch-04",
+    "name": "Classic Logo Beanie",
+    "category": "Hats",
+    "price": 25.00,
+    "description": "Warm, ribbed-knit beanie embroidered with the signature Chando emblem.",
+    "image": "./images/hoodies.jpeg"
+  },
+  {
+    "id": "ch-05",
+    "name": "Comfort Fit Joggers",
+    "category": "Joggers",
+    "price": 55.00,
+    "description": "Tailored fit with flexible stretch fabric, perfect for both relaxing and being on the move.",
+    "image": "./images/sweaters.jpeg"
+  }
+]

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chando | Shop Collection</title>
+    <meta
+        name="description"
+        content="Browse the Chando collection of modern essentials, hoodies, sweaters, t-shirts, and more."
+    >
+    <meta name="author" content="Prosper Saize">
+
+    <!-- Open Graph / Social Media Metadata -->
+    <meta property="og:title" content="Chando | Shop Collection">
+    <meta
+        property="og:description"
+        content="Browse the Chando collection of modern essentials, hoodies, sweaters, t-shirts, and more."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/hoodies.jpeg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/hoodies.jpeg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/chando.css">
+    <link rel="stylesheet" href="./styles/chando-large.css">
+
+    <!-- JavaScript -->
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+
+            <a href="./index.html" aria-label="Chando home" style="text-decoration: none;">
+                <span class="logo" style="font-size: 1.8rem; font-weight: bold; letter-spacing: 2px; color: inherit;">CHANDO</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button
+                id="menu-button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="site-nav"
+            >
+                ☰
+            </button>
+
+            <!-- NAVIGATION -->
+            <nav id="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active" href="./shop.html">
+                            Shop
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./about.html">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- SHOP HERO / HEADER SECTION -->
+        <section class="section">
+            <div class="hero-content" style="text-align: center; padding: 2rem 0;">
+                <p class="eyebrow">The Catalog</p>
+                <h1>Explore Our Collection</h1>
+                <p>Find versatile essentials designed for everyday life and personal expression.</p>
+            </div>
+
+            <!-- Optional Filters if your CSS/JS expects them -->
+            <div class="filter-controls" style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 2rem;">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="T-Shirts">T-Shirts</option>
+                    <option value="Hoodies">Hoodies</option>
+                    <option value="Joggers">Joggers</option>
+                    <option value="Hats">Hats</option>
+                </select>
+
+                <select id="sort-products">
+                    <option value="name">Sort by Name</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                </select>
+            </div>
+
+            <!-- PRODUCT DISPLAY CONTAINER (Must use ID "product-grid" to match JS) -->
+            <div id="product-grid" class="product-grid">
+                <!-- JavaScript automatically populates products here -->
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <p>
+                <strong>CHANDO</strong>
+                — Clothing with character.
+            </p>
+            <div class="footer-links">
+    <a href="./attributions.html">Attributions</a>
+    <a href="https://www.loom.com/share/b6b843a3c90b471392c0cf7f0911a824" target="_blank" rel="noopener">Project Video</a>
+</div>
+            <p>
+                &copy;
+                <span id="year"></span>
+                Chando. Created by Prosper Saize.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

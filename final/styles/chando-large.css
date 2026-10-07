@@ -1,0 +1,67 @@
+/* ==========================
+   CHANDO LARGE SCREEN STYLES (Desktop)
+   ========================== */
+
+@media (min-width: 768px) {
+    /* Hide mobile menu button, show horizontal nav */
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        position: static;
+        width: auto;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    nav ul {
+        flex-direction: row;
+        padding: 0;
+        gap: 2rem;
+    }
+
+    nav a.active,
+    nav a:hover {
+        border-bottom: 2px solid var(--primary);
+        padding-bottom: 2px;
+    }
+
+    /* Layout Adjustments */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .intro-grid,
+    .story-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+
+    .product-tools {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 0 2rem;
+    }
+}
