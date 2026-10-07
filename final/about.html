@@ -6,38 +6,43 @@
     <title>About | Chando Clothing</title>
     <meta name="description" content="Learn about the story, vision, and mission behind the Chando clothing brand.">
     <meta name="author" content="Prosper Saize">
-    
+
     <!-- Open Graph / Social Media Metadata -->
     <meta property="og:title" content="About | Chando Clothing">
     <meta property="og:description" content="Learn about the story, vision, and mission behind the Chando clothing brand.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./images/hoodies.jpeg">
+    <meta property="og:url" content="https://byusaize.github.io/wdd231/final/about.html">
+    <meta property="og:image" content="https://byusaize.github.io/wdd231/final/images/hoodies.jpeg">
 
     <!-- Favicon -->
     <link rel="icon" href="./images/hoodies.jpeg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/chando.css">
     <link rel="stylesheet" href="./styles/chando-large.css">
 
     <!-- JavaScript -->
-   <script type="module" src="./scripts/main.js" defer></script>
+    <script type="module" src="./scripts/main.js"></script>
 </head>
 <body>
 
     <!-- HEADER -->
     <header>
         <div class="header-inner">
-            <a href="./index.html" aria-label="Chando home" style="text-decoration: none;">
-                <span class="logo" style="font-size: 1.8rem; font-weight: bold; letter-spacing: 2px; color: inherit;">CHANDO</span>
+
+            <a class="logo-link" href="./index.html" aria-label="Chando home">
+                <span class="logo logo-text">CHANDO</span>
             </a>
 
-            <!-- Mobile Navigation Button -->
-            <button id="menu-button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
-                ☰
-            </button>
+            <!-- Mobile Menu Button -->
+            <button id="menu-button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
 
-            <!-- Navigation -->
+            <!-- NAVIGATION -->
             <nav id="site-nav" aria-label="Main navigation">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
@@ -45,6 +50,7 @@
                     <li><a class="active" href="./about.html">About</a></li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
@@ -54,8 +60,8 @@
             <p class="eyebrow">Our Story</p>
             <h1>About Chando</h1>
             <p>Chando was built on the philosophy that everyday wear should feel intentional, comfortable, and deeply connected to personal expression. We create minimalist pieces with distinct character.</p>
-            
-            <div class="intro-grid" style="margin-top: 2rem;">
+
+            <div class="intro-grid spaced">
                 <article class="card">
                     <h3>Our Mission</h3>
                     <p>To provide high-quality, reliable garments that give you confidence no matter where your day takes you.</p>
@@ -69,32 +75,32 @@
 
         <!-- CONTACT SECTION WITH FORM -->
         <section class="section">
-            <div class="hero-content" style="text-align: center; margin-bottom: 2rem;">
+            <div class="hero-content contact-intro">
                 <p class="eyebrow">Get in Touch</p>
                 <h2>We'd Love to Hear From You</h2>
                 <p>Have questions about our collection or need assistance? Drop us a message below.</p>
             </div>
 
-            <div style="max-width: 600px; margin: 0 auto;">
-                <form action="./success.html" method="GET" class="card" style="display: flex; flex-direction: column; gap: 1.2rem; padding: 2rem;">
-                    
-                    <div style="display: flex; flex-direction: column; gap: 0.4rem;">
-                        <label for="name" style="font-weight: bold; font-size: 0.9rem;">Your Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Enter your name" style="padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px; font-family: inherit;">
+            <div class="form-wrap">
+                <form action="./success.html" method="GET" class="card contact-form">
+
+                    <div class="form-field">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
                     </div>
 
-                    <div style="display: flex; flex-direction: column; gap: 0.4rem;">
-                        <label for="email" style="font-weight: bold; font-size: 0.9rem;">Email Address</label>
-                        <input type="email" id="email" name="email" required placeholder="Enter your email" style="padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px; font-family: inherit;">
+                    <div class="form-field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
                     </div>
 
-                    <div style="display: flex; flex-direction: column; gap: 0.4rem;">
-                        <label for="message" style="font-weight: bold; font-size: 0.9rem;">Message</label>
-                        <textarea id="message" name="message" rows="4" required placeholder="How can we help you?" style="padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; resize: vertical;"></textarea>
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="How can we help you?"></textarea>
                     </div>
 
-                    <button type="submit" class="button" style="cursor: pointer; border: none; margin-top: 0.5rem; text-align: center;">Send Message</button>
-                
+                    <button type="submit" class="button submit-button">Send Message</button>
+
                 </form>
             </div>
         </section>
@@ -104,11 +110,10 @@
     <footer>
         <div class="footer-inner">
             <p><strong>CHANDO</strong> — Clothing with character.</p>
-          <div class="footer-links">
-    <a href="./attributions.html">Attributions</a>
-    <a href="https://www.loom.com/share/b6b843a3c90b471392c0cf7f0911a824" target="_blank" rel="noopener">Project Video</a>
-</div>
-
+            <div class="footer-links">
+                <a href="./attributions.html">Attributions</a>
+                <a href="https://www.loom.com/share/b6b843a3c90b471392c0cf7f0911a824" target="_blank" rel="noopener">Project Video</a>
+            </div>
             <p>&copy; <span id="year"></span> Chando. Created by Prosper Saize.</p>
         </div>
     </footer>

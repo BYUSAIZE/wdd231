@@ -6,30 +6,43 @@
     <title>Attributions | Chando Clothing</title>
     <meta name="description" content="Attributions and acknowledgments for design assets used in the Chando project.">
     <meta name="author" content="Prosper Saize">
-    
+
     <!-- Open Graph / Social Media Metadata -->
     <meta property="og:title" content="Attributions | Chando Clothing">
     <meta property="og:description" content="Attributions and acknowledgments for design assets used in the Chando project.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./images/hoodies.jpeg">
+    <meta property="og:url" content="https://byusaize.github.io/wdd231/final/attributions.html">
+    <meta property="og:image" content="https://byusaize.github.io/wdd231/final/images/hoodies.jpeg">
 
     <!-- Favicon -->
     <link rel="icon" href="./images/hoodies.jpeg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/chando.css">
     <link rel="stylesheet" href="./styles/chando-large.css">
 
     <!-- JavaScript -->
-    <script type="module" src="./scripts/main.js" defer></script>
+    <script type="module" src="./scripts/main.js"></script>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
         <div class="header-inner">
-            <a href="./index.html" aria-label="Chando home" style="text-decoration: none;">
-                <span class="logo" style="font-size: 1.8rem; font-weight: bold; letter-spacing: 2px; color: inherit;">CHANDO</span>
+
+            <a class="logo-link" href="./index.html" aria-label="Chando home">
+                <span class="logo logo-text">CHANDO</span>
             </a>
+
+            <!-- Mobile Menu Button -->
             <button id="menu-button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
+
+            <!-- NAVIGATION -->
             <nav id="site-nav" aria-label="Main navigation">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
@@ -37,6 +50,7 @@
                     <li><a href="./about.html">About</a></li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
@@ -45,18 +59,19 @@
             <p class="eyebrow">Acknowledgments</p>
             <h1>Project Attributions</h1>
             <p>The following resources were used in the creation of the Chando clothing brand website:</p>
-            
-            <div class="card" style="margin-top: 1.5rem;">
-                <h3>Design & Assets</h3>
-                <ul style="margin-left: 1.5rem; margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+
+            <div class="card spaced">
+                <h3>Design &amp; Assets</h3>
+                <ul class="credit-list">
                     <li>Brand logo and product graphics designed custom by Prosper Saize.</li>
                     <li>Icons styled via standard Unicode and custom CSS elements.</li>
-                    <li>Font family styling courtesy of system sans-serif typography stacks.</li>
+                    <li>Typography: Inter, via Google Fonts.</li>
                 </ul>
             </div>
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <div class="footer-inner">
             <p><strong>CHANDO</strong> — Clothing with character.</p>
@@ -66,5 +81,6 @@
             <p>&copy; <span id="year"></span> Chando. Created by Prosper Saize.</p>
         </div>
     </footer>
+
 </body>
 </html>

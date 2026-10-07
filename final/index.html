@@ -4,76 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chando | Modern Clothing Brand</title>
-    <meta
-        name="description"
-        content="Discover Chando, a modern clothing brand focused on confidence, simplicity, comfort, and personal expression."
-    >
+    <meta name="description" content="Discover Chando, a modern clothing brand focused on confidence, simplicity, comfort, and personal expression.">
     <meta name="author" content="Prosper Saize">
 
     <!-- Open Graph / Social Media Metadata -->
     <meta property="og:title" content="Chando | Modern Clothing Brand">
-    <meta
-        property="og:description"
-        content="Discover Chando clothing and explore modern styles designed for everyday life."
-    >
+    <meta property="og:description" content="Discover Chando clothing and explore modern styles designed for everyday life.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./images/hoodies.jpeg">
+    <meta property="og:url" content="https://byusaize.github.io/wdd231/final/index.html">
+    <meta property="og:image" content="https://byusaize.github.io/wdd231/final/images/hoodies.jpeg">
 
     <!-- Favicon -->
     <link rel="icon" href="./images/hoodies.jpeg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/chando.css">
     <link rel="stylesheet" href="./styles/chando-large.css">
 
     <!-- JavaScript -->
-    <script type="module" src="./scripts/main.js" defer></script>
+    <script type="module" src="./scripts/main.js"></script>
 </head>
-
 <body>
 
     <!-- HEADER -->
     <header>
         <div class="header-inner">
 
-            <a href="./index.html" aria-label="Chando home" style="text-decoration: none;">
-                <span class="logo" style="font-size: 1.8rem; font-weight: bold; letter-spacing: 2px; color: inherit;">CHANDO</span>
+            <a class="logo-link" href="./index.html" aria-label="Chando home">
+                <span class="logo logo-text">CHANDO</span>
             </a>
 
             <!-- Mobile Menu Button -->
-            <button
-                id="menu-button"
-                aria-label="Open navigation"
-                aria-expanded="false"
-                aria-controls="site-nav"
-            >
-                ☰
-            </button>
+            <button id="menu-button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
 
             <!-- NAVIGATION -->
             <nav id="site-nav" aria-label="Main navigation">
                 <ul>
-                    <li>
-                        <a class="active" href="./index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./shop.html">
-                            Shop
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./about.html">
-                            About
-                        </a>
-                    </li>
+                    <li><a class="active" href="./index.html">Home</a></li>
+                    <li><a href="./shop.html">Shop</a></li>
+                    <li><a href="./about.html">About</a></li>
                 </ul>
             </nav>
 
         </div>
     </header>
-
 
     <!-- MAIN CONTENT -->
     <main>
@@ -81,90 +60,44 @@
         <!-- HERO SECTION -->
         <section class="hero">
             <div class="hero-content">
-                <p class="eyebrow">
-                    Wear Your Story
-                </p>
-                <h1>
-                    Chando is more than clothing.
-                </h1>
-                <p>
-                    Modern essentials designed for people who want
-                    their clothes to feel personal, confident, and real.
-                </p>
-                <a class="button alt" href="./shop.html">
-                    Explore the Collection
-                </a>
+                <p class="eyebrow">Wear Your Story</p>
+                <h1>Chando is more than clothing.</h1>
+                <p>Modern essentials designed for people who want their clothes to feel personal, confident, and real.</p>
+                <a class="button alt" href="./shop.html">Explore the Collection</a>
             </div>
         </section>
-
 
         <!-- CHANDO IDEA -->
         <section class="section">
-            <p class="eyebrow">
-                The Chando Idea
-            </p>
-            <h2>
-                Simple pieces. Strong identity.
-            </h2>
+            <p class="eyebrow">The Chando Idea</p>
+            <h2>Simple pieces. Strong identity.</h2>
             <div class="intro-grid">
                 <article class="card">
-                    <h3>
-                        Comfort
-                    </h3>
-                    <p>
-                        Clothing should move with you and feel natural
-                        from everyday moments to weekends out.
-                    </p>
+                    <h3>Comfort</h3>
+                    <p>Clothing should move with you and feel natural from everyday moments to weekends out.</p>
                 </article>
-
                 <article class="card">
-                    <h3>
-                        Character
-                    </h3>
-                    <p>
-                        Chando uses clean designs and recognizable
-                        details to create a distinct identity.
-                    </p>
+                    <h3>Character</h3>
+                    <p>Chando uses clean designs and recognizable details to create a distinct identity.</p>
                 </article>
-
                 <article class="card">
-                    <h3>
-                        Expression
-                    </h3>
-                    <p>
-                        What you wear can communicate something about
-                        who you are without saying a word.
-                    </p>
+                    <h3>Expression</h3>
+                    <p>What you wear can communicate something about who you are without saying a word.</p>
                 </article>
             </div>
         </section>
-
 
         <!-- BRAND SECTION -->
         <section class="section">
             <div class="story-grid">
                 <div>
-                    <p class="eyebrow">
-                        Built for Everyday Life
-                    </p>
-                    <h2>
-                        Find something that feels like you.
-                    </h2>
-                    <p>
-                        From essential tees and hoodies to joggers
-                        and hats, the Chando collection is designed
-                        around versatile pieces that can become part
-                        of your own style.
-                    </p>
-                    <a class="button" href="./about.html">
-                        Learn About Chando
-                    </a>
+                    <p class="eyebrow">Built for Everyday Life</p>
+                    <h2>Find something that feels like you.</h2>
+                    <p>From essential tees and hoodies to joggers and hats, the Chando collection is designed around versatile pieces that can become part of your own style.</p>
+                    <a class="button" href="./about.html">Learn About Chando</a>
                 </div>
-
                 <div class="card">
-                    <h3>
-                        Featured Categories
-                    </h3>
+                    <h3>Featured Categories</h3>
                     <ul>
                         <li>T-Shirts</li>
                         <li>Hoodies</li>
@@ -177,23 +110,15 @@
 
     </main>
 
-
     <!-- FOOTER -->
     <footer>
         <div class="footer-inner">
-            <p>
-                <strong>CHANDO</strong>
-                — Clothing with character.
-            </p>
-           <div class="footer-links">
-    <a href="./attributions.html">Attributions</a>
-    <a href="https://www.loom.com/share/b6b843a3c90b471392c0cf7f0911a824" target="_blank" rel="noopener">Project Video</a>
-</div>
-            <p>
-                &copy;
-                <span id="year"></span>
-                Chando. Created by Prosper Saize.
-            </p>
+            <p><strong>CHANDO</strong> — Clothing with character.</p>
+            <div class="footer-links">
+                <a href="./attributions.html">Attributions</a>
+                <a href="https://www.loom.com/share/b6b843a3c90b471392c0cf7f0911a824" target="_blank" rel="noopener">Project Video</a>
+            </div>
+            <p>&copy; <span id="year"></span> Chando. Created by Prosper Saize.</p>
         </div>
     </footer>
 

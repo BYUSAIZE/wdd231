@@ -4,91 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chando | Shop Collection</title>
-    <meta
-        name="description"
-        content="Browse the Chando collection of modern essentials, hoodies, sweaters, t-shirts, and more."
-    >
+    <meta name="description" content="Browse the Chando collection of modern essentials, hoodies, sweaters, t-shirts, and more.">
     <meta name="author" content="Prosper Saize">
 
     <!-- Open Graph / Social Media Metadata -->
     <meta property="og:title" content="Chando | Shop Collection">
-    <meta
-        property="og:description"
-        content="Browse the Chando collection of modern essentials, hoodies, sweaters, t-shirts, and more."
-    >
+    <meta property="og:description" content="Browse the Chando collection of modern essentials, hoodies, sweaters, t-shirts, and more.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./images/hoodies.jpeg">
+    <meta property="og:url" content="https://byusaize.github.io/wdd231/final/shop.html">
+    <meta property="og:image" content="https://byusaize.github.io/wdd231/final/images/hoodies.jpeg">
 
     <!-- Favicon -->
     <link rel="icon" href="./images/hoodies.jpeg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/chando.css">
     <link rel="stylesheet" href="./styles/chando-large.css">
 
     <!-- JavaScript -->
-   <script type="module" src="./scripts/main.js" defer></script>
+    <script type="module" src="./scripts/main.js"></script>
 </head>
-
 <body>
 
     <!-- HEADER -->
     <header>
         <div class="header-inner">
 
-            <a href="./index.html" aria-label="Chando home" style="text-decoration: none;">
-                <span class="logo" style="font-size: 1.8rem; font-weight: bold; letter-spacing: 2px; color: inherit;">CHANDO</span>
+            <a class="logo-link" href="./index.html" aria-label="Chando home">
+                <span class="logo logo-text">CHANDO</span>
             </a>
 
             <!-- Mobile Menu Button -->
-            <button
-                id="menu-button"
-                aria-label="Open navigation"
-                aria-expanded="false"
-                aria-controls="site-nav"
-            >
-                ☰
-            </button>
+            <button id="menu-button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
 
             <!-- NAVIGATION -->
             <nav id="site-nav" aria-label="Main navigation">
                 <ul>
-                    <li>
-                        <a href="./index.html">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a class="active" href="./shop.html">
-                            Shop
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./about.html">
-                            About
-                        </a>
-                    </li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a class="active" href="./shop.html">Shop</a></li>
+                    <li><a href="./about.html">About</a></li>
                 </ul>
             </nav>
 
         </div>
     </header>
 
-
     <!-- MAIN CONTENT -->
     <main>
 
-        <!-- SHOP HERO / HEADER SECTION -->
         <section class="section">
-            <div class="hero-content" style="text-align: center; padding: 2rem 0;">
+            <div class="hero-content shop-hero">
                 <p class="eyebrow">The Catalog</p>
                 <h1>Explore Our Collection</h1>
                 <p>Find versatile essentials designed for everyday life and personal expression.</p>
             </div>
 
-            <!-- Optional Filters if your CSS/JS expects them -->
-            <div class="filter-controls" style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 2rem;">
-                <select id="category-filter">
+            <!-- Filters -->
+            <div class="filter-controls">
+                <select id="category-filter" aria-label="Filter by category">
                     <option value="all">All Categories</option>
                     <option value="T-Shirts">T-Shirts</option>
                     <option value="Hoodies">Hoodies</option>
@@ -96,38 +74,30 @@
                     <option value="Hats">Hats</option>
                 </select>
 
-                <select id="sort-products">
+                <select id="sort-products" aria-label="Sort products">
                     <option value="name">Sort by Name</option>
                     <option value="low">Price: Low to High</option>
                     <option value="high">Price: High to Low</option>
                 </select>
             </div>
 
-            <!-- PRODUCT DISPLAY CONTAINER (Must use ID "product-grid" to match JS) -->
+            <!-- PRODUCT DISPLAY CONTAINER (ID must match the JS) -->
             <div id="product-grid" class="product-grid">
-                <!-- JavaScript automatically populates products here -->
+                <!-- JavaScript populates products here -->
             </div>
         </section>
 
     </main>
 
-
     <!-- FOOTER -->
     <footer>
         <div class="footer-inner">
-            <p>
-                <strong>CHANDO</strong>
-                — Clothing with character.
-            </p>
+            <p><strong>CHANDO</strong> — Clothing with character.</p>
             <div class="footer-links">
-    <a href="./attributions.html">Attributions</a>
-    <a href="https://www.loom.com/share/b6b843a3c90b471392c0cf7f0911a824" target="_blank" rel="noopener">Project Video</a>
-</div>
-            <p>
-                &copy;
-                <span id="year"></span>
-                Chando. Created by Prosper Saize.
-            </p>
+                <a href="./attributions.html">Attributions</a>
+                <a href="https://www.loom.com/share/b6b843a3c90b471392c0cf7f0911a824" target="_blank" rel="noopener">Project Video</a>
+            </div>
+            <p>&copy; <span id="year"></span> Chando. Created by Prosper Saize.</p>
         </div>
     </footer>
 
